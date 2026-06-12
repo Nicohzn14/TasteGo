@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "Taste Go",
+    "slug": "Taste-Go",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/LogoTastego.png",
+    "scheme": "laboratorio1",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "TU_API_KEY_AQUI"
+      }
+    },
+    "android": {
+       "permissions": [
+    "android.permission.CAMERA",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_COARSE_LOCATION"
+  ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCKbtt_7ZoZec3-uKCTIiJgnvbxEKLOV8I"
+        }
+      },
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/LogoTastego.png",
+        "backgroundImage": "./assets/images/LogoTastego.png",
+        "monochromeImage": "./assets/images/LogoTastego.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.nicohzn14.TasteGo"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+       "expo-sqlite",
+  [
+    "expo-location",
+    {
+      "locationAlwaysAndWhenInUsePermission": "TasteGo necesita tu ubicación para mostrarte restaurantes cercanos."
+    }
+  ],
+  [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/LogoTastego.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-sqlite"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+  "googlePlacesKey": "AIzaSyCKbtt_7ZoZec3-uKCTIiJgnvbxEKLOV8I",
+  "router": {},
+  "eas": {
+    "projectId": "f27031f9-a902-457b-b468-d2ef3c2e14e3"
+  }
+}
+  }
+}
