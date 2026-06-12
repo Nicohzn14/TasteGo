@@ -22,7 +22,7 @@
   ],
       "config": {
         "googleMaps": {
-          "apiKey": "AIzaSyCKbtt_7ZoZec3-uKCTIiJgnvbxEKLOV8I"
+          "apiKey": ""
         }
       },
       "adaptiveIcon": {
@@ -67,7 +67,7 @@
       "reactCompiler": true
     },
     "extra": {
-  "googlePlacesKey": "AIzaSyCKbtt_7ZoZec3-uKCTIiJgnvbxEKLOV8I",
+  "googlePlacesKey": "",
   "router": {},
   "eas": {
     "projectId": "f27031f9-a902-457b-b468-d2ef3c2e14e3"
