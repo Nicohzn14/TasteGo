@@ -166,7 +166,7 @@ export default function HomeScreen() {
 
   const irADetalle = (item: RestauranteMapa) => {
     router.push({
-      pathname: '../restaurant/[id]',
+      pathname: '../restaurant',
       params: { id: item.id, data: JSON.stringify(item) },
     });
   };
