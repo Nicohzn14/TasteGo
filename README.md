@@ -97,3 +97,5 @@ TasteGo es una aplicación móvil de descubrimiento gastronómico desarrollada p
 ## Dsecargar la app
 
 Para descargar la app de Taste Go entrar en este link de Google drive y descarga el apk
+
+https://drive.google.com/drive/folders/16-hisSGf2JO1XNuXr8ufJ2WXHxiCI4eP?usp=sharing
