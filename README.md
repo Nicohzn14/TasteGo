@@ -76,7 +76,7 @@ TasteGo es una aplicación móvil de descubrimiento gastronómico desarrollada p
    npx expo start
    ```
 
-La api de Google maps debe ser puesta en app.json, especficiamente en dos partes
+## La api de Google maps debe ser puesta en app.json, especficiamente en dos partes
 
     "android": {
        "permissions": [
@@ -93,4 +93,7 @@ La api de Google maps debe ser puesta en app.json, especficiamente en dos partes
     "extra": {
      "googlePlacesKey": "", // y en esta segunda parte
      "router": {},
+     
+## Dsecargar la app
 
+Para descargar la app de Taste Go entrar en este link de Google drive y descarga el apk
