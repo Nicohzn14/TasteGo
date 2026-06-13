@@ -133,7 +133,7 @@ export default function FavoritesScreen() {
 
   const irADetalle = (item: RestauranteMapa) => {
     router.push({
-      pathname: '../restaurant/[id]',
+      pathname: '../restaurant',
       params: { id: item.id, data: JSON.stringify(item) },
     });
   };
