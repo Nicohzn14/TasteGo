@@ -39,7 +39,7 @@ TasteGo es una aplicación móvil de descubrimiento gastronómico desarrollada p
 
 2.4 Criptografía (hash de contraseñas)
 
-    ```bash
+   ```bash
    npx expo install expo-crypto
    ```
 
