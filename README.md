@@ -1,50 +1,96 @@
-# Welcome to your Expo app 👋
+# Bienvenidos a Taste Go app 
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+TasteGo es una aplicación móvil de descubrimiento gastronómico desarrollada para la plataforma Android. Su propósito es permitir a los usuarios encontrar restaurantes cercanos a su ubicación, explorar sus menús, visualizar platos en 3D, guardar favoritos y obtener rutas de navegación hacia los establecimientos de su interés.
 
-## Get started
+## Para empezar
 
-1. Install dependencies
+1. Instalar todas las dependencias del package.json
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. descargamos todas las herramientas y paquetes que se usaron en este proyecto
+
+2.1 Dependencias base de Expo 
+
+   ```bash
+   npx expo install expo-router
+   ```
+
+   ```bash
+  npx expo install expo-status-bar
+   ```
+
+   ```bash
+   npx expo install expo-constants
+   ```
+2.2 Base de datos SQLite
+
+   ```bash
+   npx expo install expo-sqlite
+   ```
+
+2.3 Almacenamiento local
+
+   ```bash
+   npx expo install @react-native-async-storage/async-storage
+   ```
+
+2.4 Criptografía (hash de contraseñas)
+
+    ```bash
+   npx expo install expo-crypto
+   ```
+
+2.5 Ubicación GPS
+
+   ```bash
+   npx expo install expo-location
+   ```
+
+2.6 Mapas
+
+   ```bash
+   npx expo install react-native-maps
+   ```
+2.7 WebView (para el visor 3D)
+
+   ```bash
+   npx expo install react-native-webview
+   ```
+2.8 Safe Area (para notch y bordes del dispositivo)
+
+   ```bash
+   npx expo install react-native-safe-area-context
+   ```
+2.9 Gradientes de colores
+
+   ```bash
+   npx expo install expo-linear-gradient
+   ```
+
+3. Correr el proyecto
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+La api de Google maps debe ser puesta en app.json, especficiamente en dos partes
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+    "android": {
+       "permissions": [
+    "android.permission.CAMERA",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_COARSE_LOCATION"
+     ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "" // en esta primera parte
+        }
+      },
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+    "extra": {
+     "googlePlacesKey": "", // y en esta segunda parte
+     "router": {},
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
