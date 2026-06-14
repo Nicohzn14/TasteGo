@@ -4,7 +4,7 @@ TasteGo es una aplicación móvil de descubrimiento gastronómico desarrollada p
 
 ## Para empezar
 
-1. Instalar todas las dependencias del package.json
+1. Descarga los archivos del repositorio, descomprimelos y en la terminal ejecuta el siguiente comando para isntalar dependencias.
 
    ```bash
    npm install
@@ -73,8 +73,10 @@ TasteGo es una aplicación móvil de descubrimiento gastronómico desarrollada p
 3. Correr el proyecto
 
    ```bash
-   npx expo start
+   npx expo start --go
    ```
+
+Se escanea el codigo QR de la app Expo Go, y si sale algunas ocpiones, siempre presioanr ejecutar en expo go
 
 ## La api de Google maps debe ser puesta en app.json, especficiamente en dos partes
 
