@@ -91,9 +91,11 @@ Se escanea el codigo QR de la app Expo Go, y si sale algunas ocpiones, siempre p
           "apiKey": "" // en esta primera parte
         }
       },
+      
+y en esta segunda parte
 
     "extra": {
-     "googlePlacesKey": "", // y en esta segunda parte
+     "googlePlacesKey": "", // aqui
      "router": {},
      
 ## Dsecargar la app
